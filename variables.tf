@@ -1,5 +1,5 @@
 variable "CustomImageFamilyName" {
-	default = "ixload-cloud-gcp-10-00-0-152"
+	default = "ixload-cloud-gcp-10-40-144-35"
 	description = "Group of images to which image belongs"
 	type = string
 }
@@ -83,7 +83,7 @@ variable "UserProjectTag" {
 }
 
 variable "Version" {
-	default = "10-00"
+	default = "10-40"
 	description = "Versioning of the application using the deployment"
 	type = string
 }
