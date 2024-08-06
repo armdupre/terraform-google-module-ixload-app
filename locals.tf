@@ -8,7 +8,7 @@ locals {
 	InstanceName = "${local.Preamble}-instance"
 	MachineType = var.MachineType
 	NetworkTargetTags = var.NetworkTargetTags
-	Preamble = "${local.UserLoginTag}-${local.UserProjectTag}-${local.Tag}-${local.Version}-${local.InstanceId}"
+	Preamble = replace("${local.UserLoginTag}-${local.UserProjectTag}-${local.Tag}-${local.Version}-${local.InstanceId}", "_", "-")
 	RegionName = var.RegionName
 	Tag = var.Tag
 	UserEmailTag = var.UserEmailTag
